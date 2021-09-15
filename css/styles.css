@@ -1,25 +1,56 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 980px;
-  grid-template-rows: 500px 1fr 1fr 110px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px repeat(2, 1fr) 110px;
   grid-template-areas:
-    "hd"
-    "main"
-    "others"
-    "ft";
+    'hd'
+    'main'
+    'others'
+    'ft';
 }
 
 .box {
-  border: 5px solid red;
-  background-color: yellow;
-}
-
-#Main {
-  grid-area: main;
+  display: flex;
+  /*border: 3px solid red;
+  background-color: yellow;*/
 }
 
 #banner {
   grid-area: hd;
+  display: flex;
+  background-color: #090a0a;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Monoton', sans-serif;
+  color: #edf0f1;
+  font-size: 50px;
+  padding: 0px 10px;
+}
+
+.bar {
+  color: #edf0f1;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px 8px;
+  list-style: none;
+  font-size: 18px;
+}
+
+.bar:hover {
+  color: #0088a9;
+}
+
+#Main {
+  grid-area: main;
 }
 
 #Side {
@@ -33,32 +64,21 @@
 @media (min-width: 1000px) {
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 600px 1fr 110px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 135px 1fr 110px;
     grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
-      "main main main others others others others others"
-      "ft ft ft ft ft ft ft ft";
+      'hd hd hd hd hd hd hd hd'
+      'main main main main main others others others'
+      'ft ft ft ft ft ft ft ft';
   }
 
-  .box {
-    border: 5px solid red;
-    background-color: yellow;
+  .logo {
+    font-size: 60px;
+    padding: 0px 14px;
   }
 
-  #Main {
-    grid-area: main;
-  }
-
-  #banner {
-    grid-area: hd;
-  }
-
-  #Side {
-    grid-area: others;
-  }
-
-  #footer {
-    grid-area: ft;
+  .bar {
+    font-size: 22px;
+    padding: 0px 12px;
   }
 }
