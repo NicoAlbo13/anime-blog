@@ -3,10 +3,14 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  color: #0088a9;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 120px repeat(2, 1fr) 110px;
+  grid-template-rows: 120px 1fr 1fr 110px;
   grid-template-areas:
     'hd'
     'main'
@@ -36,21 +40,110 @@ a {
   padding: 0px 10px;
 }
 
+.logo:hover {
+  color: white;
+}
+
 .bar {
   color: #edf0f1;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   padding: 0px 8px;
   list-style: none;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .bar:hover {
   color: #0088a9;
 }
 
-#Main {
+#main {
   grid-area: main;
+}
+
+#Main h3 {
+  line-height: 1px;
+}
+
+.posters {
+  width: 18em;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 12px;
+}
+
+.series-identifier {
+  height: 1fr;
+}
+
+.article-identifier {
+  display: flex;
+  padding: 0px;
+}
+
+.article-identifier h3 {
+  line-height: 5px;
+  color: #2e3d49;
+}
+
+.basic-info {
+  margin: 0px;
+  font-size: 1.8em;
+}
+
+.basic-info h3 {
+  color: #2e3d49;
+}
+
+.basic-info,
+li {
+  list-style: none;
+  line-height: 2.5em;
+}
+
+.basic-info,
+ul {
+  padding: 0;
+}
+
+.bold {
+  font-weight: bold;
+  color: #2e3d49;
+}
+
+.italic {
+  font-style: italic;
+  color: rgb(110, 110, 110);
+}
+
+.article-author-identifier {
+  padding: 0px 20px;
+  font-size: 1.2em;
+}
+
+.article-author-identifier h1,
+h3 {
+  line-height: 1em;
+  color: #2e3d49;
+}
+
+.article-content {
+  padding: 0px 15px;
+  text-align: justify;
+}
+
+.more {
+  color: black;
+}
+
+.more:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.2em;
+}
+.article-content p {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 1.3em;
 }
 
 #Side {
