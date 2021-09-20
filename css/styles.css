@@ -10,7 +10,7 @@ a:hover {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 120px 1fr 29em 110px;
+  grid-template-rows: 120px 1fr 29em 200px;
   grid-template-areas:
     'hd'
     'main'
@@ -220,6 +220,49 @@ h3 {
 
 #footer {
   grid-area: ft;
+  margin-top: 50px;
+}
+
+footer {
+  width: 100%;
+}
+
+.first-footer {
+  background-color: #191919;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-links {
+  display: inline-block;
+  list-style: none;
+  padding: 5px 5em;
+  justify-content: space-between;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #edf0f1;
+}
+
+.social-links a i {
+  font-size: 3.5em;
+}
+
+.social-links a:hover i {
+  color: #0088a9;
+}
+
+.second-footer {
+  background-color: #0a0a0a;
+  color: #edf0f1;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
 }
 
 @media (min-width: 985px) and (max-width: 1150px) {
@@ -236,7 +279,7 @@ h3 {
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 135px 1fr 110px;
+    grid-template-rows: 135px 1fr 200px;
     grid-template-areas:
       'hd hd hd hd hd hd hd hd'
       'main main main main main main others others'
@@ -288,5 +331,13 @@ h3 {
 
   .box-content {
     grid-area: right;
+  }
+
+  .social-links a i {
+    font-size: 4em;
+  }
+
+  .social-links {
+    padding: 5px 6.5em;
   }
 }
