@@ -10,7 +10,7 @@ a:hover {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 120px 1fr 1fr 110px;
+  grid-template-rows: 120px 1fr 29em 110px;
   grid-template-areas:
     'hd'
     'main'
@@ -59,9 +59,10 @@ a:hover {
 
 #main {
   grid-area: main;
+  padding-bottom: 0px;
 }
 
-#Main h3 {
+#main h3 {
   line-height: 1px;
 }
 
@@ -136,12 +137,14 @@ h3 {
 
 .more {
   color: black;
+  padding: 0px;
 }
 
 .more:hover {
   text-decoration: underline;
-  text-decoration-thickness: 0.2em;
+  text-decoration-thickness: 0.15em;
 }
+
 .article-content p {
   font-family: 'IBM Plex Sans KR', sans-serif;
   font-size: 1.2em;
@@ -149,6 +152,70 @@ h3 {
 
 #Side {
   grid-area: others;
+}
+
+.nested-grid {
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 65px;
+  grid-gap: 20px;
+  grid-template-areas:
+    'tl tl tl'
+    'one two tr';
+}
+
+.tl {
+  grid-area: tl;
+}
+
+.box-one {
+  grid-area: one;
+}
+
+.box-two {
+  grid-area: two;
+}
+
+.box-three {
+  grid-area: tr;
+}
+.image {
+  width: 17em;
+  border-radius: 5%;
+}
+
+.news-box {
+  border: 3px solid grey;
+  padding: 0px 10px;
+  width: 17em;
+  height: 24em;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.news-box h2,
+h3 {
+  line-height: 0.2em;
+}
+
+.news-box p {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  line-height: 1.4em;
+  color: black;
+}
+
+.box-content {
+  text-align: left;
+}
+
+.box-link {
+  color: #090a0a;
+}
+
+.news-box:hover {
+  box-shadow: 8px 8px #909090;
+  transition: 0.3s;
 }
 
 #footer {
@@ -172,7 +239,7 @@ h3 {
     grid-template-rows: 135px 1fr 110px;
     grid-template-areas:
       'hd hd hd hd hd hd hd hd'
-      'main main main main main others others others'
+      'main main main main main main others others'
       'ft ft ft ft ft ft ft ft';
   }
 
@@ -192,5 +259,34 @@ h3 {
 
   .article-content p {
     font-size: 1.35em;
+  }
+
+  .nested-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em repeat(3, 1fr);
+    grid-template-areas:
+      'tl'
+      'one'
+      'two'
+      'tr';
+  }
+
+  .news-box {
+    width: 34em;
+    height: 14em;
+    display: grid;
+    grid-template-columns: 19em 15em;
+    grid-template-rows: 20em;
+    grid-template-areas: 'lft right';
+    align-items: flex-start;
+  }
+
+  .left-side {
+    grid-area: lft;
+  }
+
+  .box-content {
+    grid-area: right;
   }
 }
