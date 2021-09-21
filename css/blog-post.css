@@ -41,3 +41,48 @@ a:hover {
 .bar:hover {
   color: #0088a9;
 }
+
+#footer {
+  grid-area: ft;
+  margin-top: 50px;
+}
+
+footer {
+  width: 100%;
+}
+
+.first-footer {
+  background-color: #191919;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-links {
+  display: inline-block;
+  list-style: none;
+  padding: 5px 5em;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #edf0f1;
+}
+
+.social-links a i {
+  font-size: 3.5em;
+}
+
+.social-links a:hover i {
+  color: #0088a9;
+}
+
+.second-footer {
+  background-color: #0a0a0a;
+  color: #edf0f1;
+  justify-content: center;
+  text-align: center;
+  font: 0.9em 'Montserrat', sans-serif;
+}
