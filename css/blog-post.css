@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #0088a9;
+}
+
+.box {
+  display: flex;
+}
+
+#banner {
+  grid-area: hd;
+  background-color: #090a0a;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Monoton', sans-serif;
+  color: #edf0f1;
+  font-size: 50px;
+  padding: 0px 10px;
+}
+
+.logo:hover {
+  color: white;
+}
+
+.bar {
+  color: #edf0f1;
+  display: inline-block;
+  font: 1.2em 'Montserrat', sans-serif;
+  padding: 0px 8px;
+  list-style: none;
+}
+
+.bar:hover {
+  color: #0088a9;
+}
