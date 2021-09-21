@@ -61,6 +61,18 @@ a:hover {
   line-height: 1px;
 }
 
+.first-subtitles {
+  margin: 15px 20px 3px;
+}
+
+.section-for-subtitles {
+  border-left: 7px solid #202020;
+  background-color: #f0f0f0;
+  padding: 6px;
+  height: 1.1em;
+  font: 1.5em 'Raleway', sans-serif;
+}
+
 .posters {
   width: 18em;
   padding: 15px 12px 5px 20px;
@@ -140,7 +152,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 65px;
-  grid-gap: 0px 22px;
+  grid-gap: 15px 22px;
   grid-template-areas:
     'tl tl tl'
     'one two tr';
@@ -282,7 +294,7 @@ footer {
   .nested-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3em repeat(3, 1fr);
+    grid-template-rows: 4.5em repeat(3, 1fr);
     grid-template-areas:
       'tl'
       'one'
