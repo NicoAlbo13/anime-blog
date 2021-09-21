@@ -20,13 +20,10 @@ a:hover {
 
 .box {
   display: flex;
-  /*border: 3px solid red;
-  background-color: yellow;*/
 }
 
 #banner {
   grid-area: hd;
-  display: flex;
   background-color: #090a0a;
   width: 100%;
   justify-content: space-between;
@@ -47,10 +44,9 @@ a:hover {
 .bar {
   color: #edf0f1;
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  font: 1.2em 'Montserrat', sans-serif;
   padding: 0px 8px;
   list-style: none;
-  font-size: 1.2em;
 }
 
 .bar:hover {
@@ -59,7 +55,6 @@ a:hover {
 
 #main {
   grid-area: main;
-  padding-bottom: 0px;
 }
 
 #main h3 {
@@ -68,20 +63,12 @@ a:hover {
 
 .posters {
   width: 18em;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 12px;
-}
-
-.series-identifier {
-  height: 1fr;
+  padding: 15px 12px 5px 20px;
 }
 
 .article-identifier {
   display: flex;
   padding: 0px;
-  font-size: 1.18em;
 }
 
 .article-identifier h3 {
@@ -135,19 +122,13 @@ h3 {
   text-align: justify;
 }
 
-.more {
-  color: black;
-  padding: 0px;
-}
-
-.more:hover {
+.learn-more:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.15em;
 }
 
 .article-content p {
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  font-size: 1.2em;
+  font: 1.2em 'IBM Plex Sans KR', sans-serif;
 }
 
 #Side {
@@ -180,6 +161,7 @@ h3 {
 .box-three {
   grid-area: tr;
 }
+
 .image {
   width: 17em;
   border-radius: 5%;
@@ -200,13 +182,8 @@ h3 {
 }
 
 .news-box p {
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  line-height: 1.4em;
+  font: 1em/1.4em 'IBM Plex Sans KR', sans-serif;
   color: black;
-}
-
-.box-content {
-  text-align: left;
 }
 
 .box-link {
@@ -240,7 +217,6 @@ footer {
   display: inline-block;
   list-style: none;
   padding: 5px 5em;
-  justify-content: space-between;
 }
 
 .social-links a {
@@ -261,8 +237,7 @@ footer {
   color: #edf0f1;
   justify-content: center;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9em;
+  font: 0.9em 'Montserrat', sans-serif;
 }
 
 @media (min-width: 985px) and (max-width: 1150px) {
