@@ -331,6 +331,7 @@ footer {
 
   .box-content {
     grid-area: right;
+    padding: 1.4em 0px;
   }
 
   .social-links a i {
