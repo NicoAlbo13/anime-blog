@@ -186,3 +186,39 @@ footer {
   text-align: center;
   font: 0.9em 'Montserrat', sans-serif;
 }
+
+@media (min-width: 985px) and (max-width: 1150px) {
+  .article-identifier {
+    font-size: 1em;
+  }
+
+  .article-content p {
+    font-size: 1.35em;
+  }
+}
+
+@media (min-width: 1151px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 135px 1fr 200px;
+  }
+
+  .logo {
+    font-size: 60px;
+    padding: 0px 14px;
+  }
+
+  .bar {
+    font-size: 22px;
+    padding: 0px 12px;
+  }
+
+  .article-identifier {
+    font-size: 1em;
+  }
+
+  .article-content p {
+    font-size: 1.35em;
+  }
+}
