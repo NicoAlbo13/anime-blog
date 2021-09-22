@@ -11,6 +11,16 @@ a:hover {
   display: flex;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 1fr 200px;
+  grid-template-areas:
+    'hd'
+    'main'
+    'ft';
+}
+
 #banner {
   grid-area: hd;
   background-color: #090a0a;
@@ -40,6 +50,96 @@ a:hover {
 
 .bar:hover {
   color: #0088a9;
+}
+
+#main {
+  grid-area: main;
+}
+
+#main h3 {
+  line-height: 1px;
+}
+
+.first-subtitles {
+  margin: 15px 20px 3px;
+}
+
+.section-for-subtitles {
+  border-left: 7px solid #202020;
+  background-color: #f0f0f0;
+  padding: 6px;
+  height: 1.1em;
+  font: 1.5em 'Raleway', sans-serif;
+}
+
+.posters {
+  width: 18em;
+  padding: 15px 12px 5px 20px;
+}
+
+.article-identifier {
+  display: flex;
+  padding: 0px;
+}
+
+.article-identifier h3 {
+  line-height: 5px;
+  color: #2e3d49;
+}
+
+.basic-info {
+  margin: 0px;
+  font-size: 1.7em;
+}
+
+.basic-info h3 {
+  color: #2e3d49;
+}
+
+.basic-info,
+li {
+  list-style: none;
+  line-height: 2.5em;
+}
+
+.basic-info,
+ul {
+  padding: 0;
+}
+
+.bold {
+  font-weight: bold;
+  color: #2e3d49;
+}
+
+.italic {
+  font-style: italic;
+  color: rgb(110, 110, 110);
+}
+
+.article-author-identifier {
+  padding: 0px 20px;
+  font-size: 1.1em;
+}
+
+.article-author-identifier h1,
+h3 {
+  line-height: 1.1em;
+  color: #2e3d49;
+}
+
+.article-content {
+  padding: 0px 15px;
+  text-align: justify;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.15em;
+}
+
+.article-content p {
+  font: 1.2em 'IBM Plex Sans KR', sans-serif;
 }
 
 #footer {
