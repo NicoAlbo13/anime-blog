@@ -16,9 +16,9 @@ a:hover {
   grid-template-columns: 1fr;
   grid-template-rows: 120px 1fr 200px;
   grid-template-areas:
-    'hd'
-    'main'
-    'ft';
+    'hd hd hd hd hd hd hd hd'
+    '. . . main main . . .'
+    'ft ft ft ft ft ft ft ft';
 }
 
 #banner {
@@ -60,16 +60,52 @@ a:hover {
   line-height: 1px;
 }
 
-.first-subtitles {
-  margin: 15px 20px 3px;
+.main-part {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 10em 1fr 10em;
+  grid-template-rows: 1fr 25%;
+  grid-template-areas:
+    '. content .'
+    '. author .';
 }
 
-.section-for-subtitles {
-  border-left: 7px solid #202020;
-  background-color: #f0f0f0;
-  padding: 6px;
-  height: 1.1em;
-  font: 1.5em 'Raleway', sans-serif;
+.post-image {
+  padding-top: 25px;
+  width: 85%;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.main-content {
+  grid-area: content;
+}
+
+.author-info {
+  grid-area: author;
+  text-align: center;
+  font: 1.2em 'IBM Plex Sans KR', sans-serif;
+}
+
+.author-text {
+  align-items: center;
+}
+
+.author-info p {
+  text-align: center;
+}
+
+.bold-link {
+  font-weight: bold;
+  color: #02b3e4;
 }
 
 .posters {
@@ -119,7 +155,7 @@ ul {
 
 .article-author-identifier {
   padding: 0px 20px;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .article-author-identifier h1,
@@ -133,13 +169,14 @@ h3 {
   text-align: justify;
 }
 
-.learn-more:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 0.15em;
+.avatar-image {
+  border-radius: 100%;
+  border: 3px solid #dcdcdc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .article-content p {
-  font: 1.2em 'IBM Plex Sans KR', sans-serif;
+  font: 0.8em 'IBM Plex Sans KR', sans-serif;
 }
 
 #footer {
@@ -215,10 +252,38 @@ footer {
   }
 
   .article-identifier {
-    font-size: 1em;
+    font-size: 1.7em;
   }
 
   .article-content p {
     font-size: 1.35em;
+  }
+
+  .main-part {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 13em 1fr 30%;
+    grid-template-rows: 1fr;
+    grid-template-areas: '. content author';
+  }
+
+  .author-info {
+    grid-area: author;
+    text-align: center;
+    padding-left: 1.4em;
+    font: 1.3em 'IBM Plex Sans KR', sans-serif;
+    margin-right: 2em;
+  }
+
+  .avatar-image {
+    width: 55%;
+  }
+
+  .author-title {
+    font-size: 120%;
+  }
+
+  .author-text {
+    font-size: 90%;
   }
 }
