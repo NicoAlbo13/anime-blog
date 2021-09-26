@@ -191,16 +191,74 @@ footer {
 .first-footer {
   background-color: #191919;
   color: whitesmoke;
-  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 'medias subscribe';
+}
+
+.subscribe {
+  padding: 1.3em 1em;
+  grid-area: subscribe;
+}
+
+.form-style {
+  background-color: #191919;
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+  border-bottom-width: 0.2em;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  font-size: 1em;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.footer-border {
+  width: 10em;
+  height: 4px;
+  background: #707070;
+}
+
+.first-footer p {
+  font: 1.1em/1em 'IBM Plex Sans KR', sans-serif;
+}
+
+.first-footer h2 {
+  font: 'IBM Plex Sans KR', sans-serif;
+  margin-bottom: 2%;
+}
+
+.subscribe-button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #edf0f1;
+  border: #edf0f1;
+  border-radius: 12%;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.subscribe-button:hover {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border: solid #0a0a0a;
+}
+
+.social-media {
+  padding: 1.3em 1.7em;
+  grid-area: medias;
 }
 
 .social-links {
   display: inline-block;
   list-style: none;
-  padding: 5px 5em;
+  padding: 5px 1.33em;
 }
 
 .social-links a {
@@ -285,5 +343,38 @@ footer {
 
   .author-text {
     font-size: 90%;
+  }
+
+  .social-links a i {
+    font-size: 4em;
+  }
+
+  .social-links {
+    padding: 5px 3em;
+  }
+
+  .first-footer {
+    display: grid;
+    grid-template-columns: 1fr 35em;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'medias subscribe';
+  }
+
+  .subscribe-button {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .footer-border {
+    width: 12em;
+  }
+
+  .first-footer p {
+    font-size: 1.25em;
+  }
+
+  .first-footer h2 {
+    font-size: 2em;
+    margin-bottom: 0.5%;
   }
 }
