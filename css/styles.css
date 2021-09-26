@@ -181,7 +181,7 @@ h3 {
 }
 
 .news-box {
-  border: 3px solid grey;
+  border: 3px solid #e8e8e8;
   padding: 0px 10px;
   width: 17em;
   height: 24em;
@@ -204,7 +204,7 @@ h3 {
 }
 
 .news-box:hover {
-  box-shadow: 10px 10px 5px #c8c8c8;
+  box-shadow: 9px 9px 5px #f0f0f0;
   transition: 0.3s;
 }
 
