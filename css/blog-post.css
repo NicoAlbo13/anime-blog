@@ -170,6 +170,18 @@ h3 {
   text-align: justify;
 }
 
+.back-up {
+  color: black;
+}
+
+.back-up:hover {
+  color: #0088a9;
+}
+
+.up-bold {
+  text-align: right;
+}
+
 .avatar-image {
   border-radius: 100%;
   border: 3px solid #dcdcdc;
