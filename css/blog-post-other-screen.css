@@ -1,0 +1,393 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #0088a9;
+}
+
+.box {
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 1fr 200px;
+  grid-template-areas:
+    'hd hd hd hd hd hd hd hd'
+    '. . . main main . . .'
+    'ft ft ft ft ft ft ft ft';
+}
+
+#banner {
+  grid-area: hd;
+  background-color: #191919;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Monoton', sans-serif;
+  color: #edf0f1;
+  font-size: 50px;
+  padding: 0px 10px;
+}
+
+.logo:hover {
+  color: white;
+}
+
+.bar {
+  color: #edf0f1;
+  display: inline-block;
+  font: 1.2em 'Montserrat', sans-serif;
+  padding: 0px 8px;
+  list-style: none;
+}
+
+.bar:hover {
+  color: #0088a9;
+}
+
+#main {
+  grid-area: main;
+}
+
+#main h3 {
+  line-height: 1px;
+}
+
+.main-part {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 10em 1fr 10em;
+  grid-template-rows: 1fr 25%;
+  grid-template-areas:
+    '. content .'
+    '. author .';
+}
+
+.post-image {
+  margin: 30px;
+  width: 85%;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.main-content {
+  grid-area: content;
+}
+
+.author-info {
+  grid-area: author;
+  text-align: center;
+  font: 1.2em 'IBM Plex Sans KR', sans-serif;
+}
+
+.author-text {
+  align-items: center;
+}
+
+.author-info p {
+  text-align: center;
+}
+
+.bold-link {
+  font-weight: bold;
+  color: #02b3e4;
+}
+
+.posters {
+  width: 18em;
+  padding: 15px 12px 5px 20px;
+}
+
+.article-identifier {
+  display: flex;
+  padding: 0px;
+}
+
+.article-identifier h3 {
+  line-height: 5px;
+  color: #2e3d49;
+}
+
+.basic-info {
+  margin: 0px;
+  font-size: 1.7em;
+}
+
+.basic-info h3 {
+  color: #2e3d49;
+}
+
+.basic-info,
+li {
+  list-style: none;
+  line-height: 2.5em;
+}
+
+.basic-info,
+ul {
+  padding: 0;
+}
+
+.bold {
+  font-weight: bold;
+  color: #2e3d49;
+}
+
+.italic {
+  font-style: italic;
+  color: rgb(110, 110, 110);
+}
+
+.article-author-identifier {
+  padding: 0px 20px;
+  font-size: 1.2em;
+}
+
+.article-author-identifier h1,
+h3 {
+  line-height: 1.1em;
+  color: #2e3d49;
+}
+
+.article-content {
+  padding: 0px 15px;
+  text-align: justify;
+}
+
+.back-up {
+  color: black;
+}
+
+.back-up:hover {
+  color: #0088a9;
+}
+
+.up-bold {
+  text-align: right;
+}
+
+.avatar-image {
+  border-radius: 100%;
+  border: 3px solid #dcdcdc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.article-content p {
+  font: 0.8em 'IBM Plex Sans KR', sans-serif;
+}
+
+#footer {
+  grid-area: ft;
+  margin-top: 50px;
+}
+
+footer {
+  width: 100%;
+}
+
+.first-footer {
+  background-color: #191919;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 'medias subscribe';
+}
+
+.subscribe {
+  padding: 1.3em 1em;
+  grid-area: subscribe;
+}
+
+.form-style {
+  background-color: #191919;
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+  border-bottom-width: 0.2em;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  font-size: 1em;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.footer-border {
+  width: 10em;
+  height: 4px;
+  background: #707070;
+}
+
+.first-footer p {
+  font: 1.1em/1em 'IBM Plex Sans KR', sans-serif;
+}
+
+.first-footer h2 {
+  font: 'IBM Plex Sans KR', sans-serif;
+  margin-bottom: 2%;
+}
+
+.subscribe-button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #edf0f1;
+  border: #edf0f1;
+  border-radius: 12%;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.subscribe-button:hover {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border: solid #0a0a0a;
+}
+
+.social-media {
+  padding: 1.3em 1.7em;
+  grid-area: medias;
+}
+
+.social-links {
+  display: inline-block;
+  list-style: none;
+  padding: 5px 1.33em;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #edf0f1;
+}
+
+.social-links a i {
+  font-size: 3.5em;
+}
+
+.social-links a:hover i {
+  color: #0088a9;
+}
+
+.second-footer {
+  background-color: #0a0a0a;
+  color: #edf0f1;
+  justify-content: center;
+  text-align: center;
+  font: 0.9em 'Montserrat', sans-serif;
+}
+
+@media (min-width: 985px) and (max-width: 1150px) {
+  .article-identifier {
+    font-size: 1em;
+  }
+
+  .article-content p {
+    font-size: 1.35em;
+  }
+}
+
+@media (min-width: 1151px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 135px 1fr 200px;
+  }
+
+  .logo {
+    font-size: 60px;
+    padding: 0px 14px;
+  }
+
+  .bar {
+    font-size: 22px;
+    padding: 0px 12px;
+  }
+
+  .article-identifier {
+    font-size: 1.7em;
+  }
+
+  .article-content p {
+    font-size: 1.35em;
+  }
+
+  .main-part {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 13em 1fr 30%;
+    grid-template-rows: 1fr;
+    grid-template-areas: '. content author';
+  }
+
+  .author-info {
+    grid-area: author;
+    text-align: center;
+    padding-left: 1.4em;
+    font: 1.3em 'IBM Plex Sans KR', sans-serif;
+    margin-right: 2em;
+  }
+
+  .avatar-image {
+    width: 55%;
+  }
+
+  .author-title {
+    font-size: 120%;
+  }
+
+  .author-text {
+    font-size: 90%;
+  }
+
+  .social-links a i {
+    font-size: 4em;
+  }
+
+  .social-links {
+    padding: 5px 3em;
+  }
+
+  .first-footer {
+    display: grid;
+    grid-template-columns: 1fr 35em;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'medias subscribe';
+  }
+
+  .subscribe-button {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .footer-border {
+    width: 12em;
+  }
+
+  .first-footer p {
+    font-size: 1.25em;
+  }
+
+  .first-footer h2 {
+    font-size: 2em;
+    margin-bottom: 0.5%;
+  }
+}
