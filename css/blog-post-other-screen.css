@@ -196,6 +196,11 @@ h3 {
   font: 0.8em 'IBM Plex Sans KR', sans-serif;
 }
 
+blockquote {
+  font: 1.3em/1.1em 'IBM Plex Sans KR', sans-serif;
+  text-align: left;
+}
+
 #footer {
   grid-area: ft;
   margin-top: 50px;
