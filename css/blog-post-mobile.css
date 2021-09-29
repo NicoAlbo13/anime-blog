@@ -1,0 +1,309 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #0088a9;
+}
+
+.box {
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 1fr 100px;
+  grid-template-areas:
+    'hd hd hd hd hd hd hd hd'
+    '. . . main main . . .'
+    'ft ft ft ft ft ft ft ft';
+}
+
+#banner {
+  grid-area: hd;
+  background-color: #191919;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Monoton', sans-serif;
+  color: #edf0f1;
+  font-size: 1.1em;
+  padding: 0px 10px;
+}
+
+.logo:hover {
+  color: white;
+}
+
+.bar {
+  color: #edf0f1;
+  display: inline-block;
+  font: 0.85em 'Montserrat', sans-serif;
+  padding: 0px 3px;
+  list-style: none;
+}
+
+.bar:hover {
+  color: #0088a9;
+}
+
+#main {
+  grid-area: main;
+}
+
+#main h3 {
+  line-height: 1px;
+}
+
+.main-part {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2.1em 1fr 2.1em;
+  grid-template-rows: 1fr 16em;
+  grid-template-areas:
+    '. content .'
+    '. author .';
+}
+
+.post-image {
+  margin: 30px;
+  width: 93%;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.main-content {
+  grid-area: content;
+}
+
+.author-info {
+  grid-area: author;
+  text-align: center;
+  font: 1em/1.1em 'IBM Plex Sans KR', sans-serif;
+}
+
+.author-title {
+  font-size: 1.2em;
+}
+
+.author-text {
+  align-items: center;
+  font-size: 0.7em;
+}
+
+.author-info p {
+  text-align: center;
+}
+
+.bold-link {
+  font-weight: bold;
+  color: #02b3e4;
+}
+
+.posters {
+  width: 18em;
+  padding: 15px 12px 5px 20px;
+}
+
+.article-identifier {
+  display: flex;
+  padding: 0px;
+}
+
+.article-identifier h3 {
+  line-height: 5px;
+  color: #2e3d49;
+}
+
+.basic-info {
+  margin: 0px;
+  font-size: 1.7em;
+}
+
+.basic-info h3 {
+  color: #2e3d49;
+}
+
+.basic-info,
+li {
+  list-style: none;
+  line-height: 2.5em;
+}
+
+.basic-info,
+ul {
+  padding: 0;
+}
+
+.bold {
+  font-weight: bold;
+  color: #2e3d49;
+}
+
+.italic {
+  font-style: italic;
+  color: rgb(110, 110, 110);
+}
+
+.article-author-identifier {
+  padding: 0px 20px;
+  font-size: 0.83em;
+}
+
+.article-author-identifier h1,
+h3 {
+  line-height: 1.1em;
+  color: #2e3d49;
+}
+
+.article-content {
+  padding: 0px 15px;
+  text-align: justify;
+}
+
+.back-up {
+  color: black;
+}
+
+.back-up:hover {
+  color: #0088a9;
+}
+
+.up-bold {
+  text-align: right;
+}
+
+.avatar-image {
+  width: 7.1em;
+  border-radius: 100%;
+  border: 3px solid #dcdcdc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.article-content p {
+  font: 0.86em/1.1em 'IBM Plex Sans KR', sans-serif;
+}
+
+#footer {
+  grid-area: ft;
+  margin-top: 50px;
+}
+
+footer {
+  width: 100%;
+}
+
+.first-footer {
+  background-color: #191919;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 45%;
+  grid-template-areas:
+    'medias'
+    'subscribe';
+}
+
+.subscribe {
+  padding: 1.3em 1em;
+  grid-area: subscribe;
+}
+
+.form-style {
+  background-color: #191919;
+  padding: 20px;
+  width: 65%;
+  margin-bottom: 20px;
+  border-bottom-width: 0.2em;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  font-size: 0.8em;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.footer-border {
+  width: 6.5em;
+  height: 4px;
+  background: #707070;
+}
+
+.first-footer p {
+  font: 0.9em/1em 'IBM Plex Sans KR', sans-serif;
+}
+
+.first-footer h2 {
+  font: 1.1em 'IBM Plex Sans KR', sans-serif;
+  margin-bottom: 2%;
+}
+
+.subscribe-button {
+  padding: 7px;
+  cursor: pointer;
+  background-color: #edf0f1;
+  border: #edf0f1;
+  border-radius: 12%;
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
+.subscribe-button:hover {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border: solid #0a0a0a;
+}
+
+.social-media {
+  padding: 0em 1.7em 0px;
+  grid-area: medias;
+}
+
+.subscribe {
+  padding: 0px 1.7em 4em;
+}
+
+.social-links {
+  display: inline-block;
+  list-style: none;
+  padding: 5px 1em;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #edf0f1;
+}
+
+.social-links a i {
+  font-size: 2.52em;
+}
+
+.social-links a:hover i {
+  color: #0088a9;
+}
+
+.second-footer {
+  background-color: #0a0a0a;
+  color: #edf0f1;
+  padding: 0.6em;
+  font: 0.7em 'Montserrat', sans-serif;
+  justify-content: center;
+  text-align: center;
+}
